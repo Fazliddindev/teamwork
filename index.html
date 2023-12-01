@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'yellow': '#FCB72B',
+                        'dark_gray': '#495567',
+                        'mid_gray':'#939CAA',
+                        'light_gray':'#E5ECF4',                        
+
+                    },
+
+                },
+                fontFamily: {
+                    'font': ['Muller']
+                },
+                container: {
+                    center: true,
+                },
+
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <div class="flex flex-col items-start gap-y-[120px]">
+                <span class="opacity-80 text-zinc-900 text-sm font-normal font-['Muller'] leading-tight">Главная / Уникальные зеркала</span>
+                <div>
+                    <h1 class="text-zinc-900 text-[38px] font-medium font-['Muller'] leading-[51.30px]">Уникальные зеркала для самых ярких интерьеров</h1>
+                    <p class="w-[455px] opacity-80 text-zinc-900 text-[22px] font-normal font-['Muller'] leading-[30.80px]">Работаем с дизайнерами и архитекторами,  предлагая индивидуальные решения  и выгодные условия сотрудничества</p>
+                    <button class="bg-[#900B7B] flex flex-row items-center gap-x-[10px] py-[30px] px-[50px]">
+                        <h1 class="text-white text-xl font-medium font-['Muller'] leading-7">Сотрудничать с нами</h1>
+                        <img src="./images/arrow.png" alt="">
+                    </button>
+                    <div class="flex flex-row items-center gap-x-[50px]">
+                        <img src="./images/img_small_section.png" alt="">
+                        <div class="flex flex-row items-center gap-x-[10px]">
+                            <img src="./images/back.png" alt="">
+                            <img src="./images/go.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
