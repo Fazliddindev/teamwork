@@ -11,10 +11,9 @@
             theme: {
                 extend: {
                     colors: {
-                        'yellow': '#FCB72B',
-                        'dark_gray': '#495567',
-                        'mid_gray':'#939CAA',
-                        'light_gray':'#E5ECF4',                        
+                        'color1': '#9e3085',
+                        'color2': '#841375',
+
 
                     },
 
@@ -34,28 +33,120 @@
 </head>
 
 <body>
-    <main>
-        <section class="container">
-            <div class="flex flex-col items-start gap-y-[120px]">
-                <span class="opacity-80 text-zinc-900 text-sm font-normal font-['Muller'] leading-tight">Главная / Уникальные зеркала</span>
-                <div>
-                    <h1 class="text-zinc-900 text-[38px] font-medium font-['Muller'] leading-[51.30px]">Уникальные зеркала для самых ярких интерьеров</h1>
-                    <p class="w-[455px] opacity-80 text-zinc-900 text-[22px] font-normal font-['Muller'] leading-[30.80px]">Работаем с дизайнерами и архитекторами,  предлагая индивидуальные решения  и выгодные условия сотрудничества</p>
-                    <button class="bg-[#900B7B] flex flex-row items-center gap-x-[10px] py-[30px] px-[50px]">
-                        <h1 class="text-white text-xl font-medium font-['Muller'] leading-7">Сотрудничать с нами</h1>
-                        <img src="./images/arrow.png" alt="">
-                    </button>
-                    <div class="flex flex-row items-center gap-x-[50px]">
-                        <img src="./images/img_small_section.png" alt="">
-                        <div class="flex flex-row items-center gap-x-[10px]">
-                            <img src="./images/back.png" alt="">
-                            <img src="./images/go.png" alt="">
+    <header class="container sticky bg-white top-0 mb-[00px]">
+        <div class="flex flex-row items-center justify-between py-[15px]">
+            <img class="w-[130px] h-[55px] md:w-[180px] md:h-[75px] xl:w-[220px] xl:h-[100px]" src="./images/logo.webp"
+                alt="">
+            <div class="flex flex-col items-center gap-y-[20px]">
+                <ul class="text-[14px] text-[#4D4D4D]  flex-row items-center gap-x-[30px] font-thin lg:flex hidden">
+                    <a href="">
+                        <li
+                            class="cursor-pointer hover:text-[#881777] hover:font-extralight hover:border-b-[1px] border-[#881777]">
+                            О компании</li>
+                    </a>
+                    <a href="">
+                        <li
+                            class="cursor-pointer hover:text-[#881777] hover:font-extralight hover:border-b-[1px] border-[#881777]">
+                            Самовывоз</li>
+                    </a>
+                    <a href="">
+                        <li
+                            class="cursor-pointer hover:text-[#881777] hover:font-extralight hover:border-b-[1px] border-[#881777]">
+                            Доставка</li>
+                    </a>
+                    <a href="">
+                        <li
+                            class="cursor-pointer hover:text-[#881777] hover:font-extralight hover:border-b-[1px] border-[#881777]">
+                            Оплата</li>
+                    </a>
+                    <a href="">
+                        <li
+                            class="cursor-pointer hover:text-[#881777] hover:font-extralight hover:border-b-[1px] border-[#881777]">
+                            Монтаж</li>
+                    </a>
+                    <a href="">
+                        <li
+                            class="cursor-pointer hover:text-[#881777] hover:font-extralight hover:border-b-[1px] border-[#881777]">
+                            Выезд замерщика</li>
+                    </a>
+                    <a href="">
+                        <li
+                            class="cursor-pointer hover:text-[#881777] hover:font-extralight hover:border-b-[1px] border-[#881777]">
+                            Контакты</li>
+                    </a>
+                </ul>
+                <div class="flex flex-row items-center gap-x-[20px] lg:gap-x-[50px]">
+                    <form
+                        class="flex flex-row items-center gap-x-[10px] w-[250px]  rounded-full py-[8px] px-[10px] .placeholder-transparent bg-[#F3F3F3]  lg:flex hidden"
+                        action="/action_page.php">
+                        <img class="cursor-pointer" src="./images/search.svg" alt="">
+                        <input class="outline-none   bg-[#F3F3F3]" id="phone" name="phone" placeholder="Поиск">
+                    </form>
+                    <img class="md:hidden" src="./images/img_burger.svg" alt="">
+                    <div class="hidden md:flex flex-row items-center gap-x-[5px] mr-[20px]">
+                        <span class="text-12px text-[#919294]">Ваш город:</span>
+                        <div class="flex flex-row items-center gap-x-[3px]">
+                            <h1 class="cursor-pointer text-12px text-[#000000] hover:text-[#881777]">Москва</h1>
+                            <img class="cursor-pointer rotate-180" src="./images/closing.svg" alt="">
                         </div>
+                    </div>
+                    <div class="sm:flex flex-col gap-y-[10px] cursor-pointer  hidden">
+                        <div class="flex flex-row items-center gap-x-[5px]">
+                            <img src="./images/phone.svg" alt="">
+                            <a href="">
+                                <h1 class="text-[16px] font-semibold text-[#413239] hover:text-[#881777]">+7 (499)
+                                    430-11-48</h1>
+                            </a>
+                        </div>
+                        <div class="flex flex-row items-center gap-x-[8px]">
+                            <img src="./images/whatsup.svg" alt="">
+                            <a href=""><span class="text-[14px] font-thin hover:text-[#881777]">Написать в
+                                    WhatsApp</span></a>
+                        </div>
+                    </div>
+                    <img class="lg:hidden md:flex hidden" src="./images/img_burger.svg" alt="">
+
+
+                </div>
+            </div>
+            <div class="flex-col items-start gap-y-[20px] lg:flex hidden">
+                <div class="flex flex-row items-center gap-x-[8px] cursor-pointer">
+                    <a href=""><img class="" src="./images/user.svg" alt=""></a>
+                    <a href=""><span class="text-[#413239] font-thin text-[13px] hover:text-[#881777]">Вход /
+                            регистрация</span></a>
+                </div>
+                <div class="flex flex-row items-center gap-x-[10px]">
+                    <img class="cursor-pointer" src="./images/group_1.png" alt="">
+                    <div
+                        class="py-[8px] px-[10px] bg-[#F3F3F3] cursor-pointer rounded-full flex flex-row items-center gap-x-[10px]">
+                        <img src="./images/group2.png" alt="">
+                        <span class="text-[#881777] text-[18px] font-medium uppercase">0</span>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+
+
+
+        </div>
+        <div
+            class="lg:flex hidden flex-row 2xl:gap-x-[300px] xl:gap-x-[170px] gap-x-[50px] items-center bg-[#F3F3F3] h-[40px] w-full">
+            <div
+                class="flex flex-row items-center gap-x-[10px]  cursor-pointer rounded-full py-[15px] px-[25px] hover:bg-[#91217d] bg-gradient-to-br bg-color2 to color1    ">
+                <div class="flex flex-col items-start gap-y-[5px]">
+                    <span class="bg-white lg:w-[24px] w-[20px] h-[2px]"></span>
+                    <span class="bg-white lg:w-[24px] w-[20px] h-[2px]"></span>
+                    <span class="bg-white lg:w-[24px] w-[20px] h-[2px]"></span>
+                </div>
+                <h1 class="text-white text-[10px] lg:text-[12px] uppercase">КАТАЛОГ ЗЕРКАЛ</h1>
+            </div>
+            <a href="">
+                <div class="flex flex-row items-center gap-x-[8px]  cursor-pointer">
+                    <img class="w-[18px] h-[18px]" src="./images/img_div2.png" alt="">
+                    <span class="text-[12px] text-[#333333] hover:text-[#881777]">Распродажа</span>
+                </div>
+            </a>
+        </div>
+    </header>
 </body>
 
 </html>
